@@ -90,6 +90,8 @@ img {
 .contacts {
   list-style-type: none;
   margin-left: auto;
+  display: flex;
+  flex-direction: row;
 }
 .contacts-item {
   color: #757575;
@@ -101,14 +103,25 @@ img {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  margin-right: 50px;
+  margin-right: 30px; /* icon-list also */
 }
 .contacts-item:hover,
 .contacts-item:focus {
   color: var(--main-color);
+  fill: var(--main-color);
 }
 .contacts-item:active {
   color: var(--secondary-color);
+}
+.icon-envelope,
+.icon-smartphone {
+  display: flex;
+  align-items: center;
+  fill: #757575;
+  list-style-type: none;
+}
+.contact-icon {
+  margin-right: 10px;
 }
 /* === END CONTACTS === */
 
@@ -327,11 +340,6 @@ img {
 .socialimg {
   width: 20px;
   height: 20px;
-  : #fff;
-}
-.socialimg:hover,
-.socialimg:focus {
-  fill: #fff;
 }
 .social-image {
   display: flex;
