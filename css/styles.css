@@ -202,12 +202,14 @@ img {
   display: flex;
   justify-content: center;
   min-height: 600px;
-  min-width: 1600px;
+  max-width: 1600px;
   align-items: center;
   background-repeat: no-repeat;
+
   /* which one use? */
-  background-size: cover;
+  background-size: contain;
   /* object-fit: contain; */
+
   /* object-position: 80px 0px; */
 }
 .big-title.bg-image {
@@ -216,6 +218,7 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url("/images/bg.jpg");
+    background-size: 100% 100%;
 }
 .btn {
   background: var(--main-color);
@@ -513,6 +516,7 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   padding: 6px 22px;
+  border: none;
 }
 .btn-item:hover,
 .btn-item:focus {
@@ -607,17 +611,22 @@ img {
 
 /* END OUR CUSTOMERS */
 /* FOOTER */
-.wrapper-footer .container{
+footer {
+  background-color: #2f303a;
+}
+.footer-wrapper .container{
   display: flex;
   align-items: baseline;
-  background-color: #2f303a;
   min-height: 252px;
   padding-top: 60px;
+  min-width: 1200px;
+  /* flex-flow: row wrap; */
 }
 .footer-logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
 }
 .adress {
   text-align: start;
@@ -632,8 +641,10 @@ img {
 .footer-right-side {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
   padding-left: 70px;
+  width: 50%;
+  
 }
 .footer-icons {
   font-family: var(--main-font);
@@ -653,4 +664,7 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+
 /* END FOOTER */
+/* filter 5 */
+
