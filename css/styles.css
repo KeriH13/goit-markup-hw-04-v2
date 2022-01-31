@@ -602,10 +602,14 @@ img {
   width: 106px;
   height: 60px;
 }
+.logo-icon:hover {
+  fill: var(--main-color);
+}
 .customer-image:hover, 
 .customer-image:focus {
   color: var(--main-color);
   border-color: var(--main-color);
+  fill: var(--main-color); /* svg icon */
 }
 
 
