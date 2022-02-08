@@ -218,7 +218,6 @@ img {
   max-width: 1600px;
   align-items: center;
   background-repeat: no-repeat;
-
   /* which one use? */
   background-size: contain;
   /* object-fit: contain; */
@@ -233,6 +232,9 @@ img {
     url("../images/bg.jpg");
     background-size: 100% 100%;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn {
   background: var(--main-color);
@@ -689,3 +691,56 @@ footer {
 /* END FOOTER */
 /* filter 5 */
 
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumb {
+  border: 10px solid green;
+  border-radius: 50px;
+  width: 480px;
+
+  overflow: hidden;
+  position: relative;
+}
+span {
+  position: absolute;
+  font-size: 30px;
+  color: red;
+  top: 20px;
+  left: 20px;
+}
+p {
+  position: absolute;
+  font-size: 30px;
+  color: red;
+  top: 20px;
+  left: 20px;
+  flex-shrink: 3;
+}
+.small-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+----------------------------------------------------------------<div class="thumb">
+  <img src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640" alt="">
+  <div class="small-container">
+  <span>x</span>
+  <p>H</p>
+  </div>
+</div>
