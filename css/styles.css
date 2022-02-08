@@ -218,6 +218,7 @@ img {
   max-width: 1600px;
   align-items: center;
   background-repeat: no-repeat;
+  background-position: center;
   /* which one use? */
   background-size: contain;
   /* object-fit: contain; */
@@ -736,11 +737,3 @@ p {
   align-items: center;
   flex-direction: row;
 }
-
-----------------------------------------------------------------<div class="thumb">
-  <img src="https://images.pexels.com/photos/33492/cat-red-cute-mackerel.jpg?auto=compress&cs=tinysrgb&h=480&w=640" alt="">
-  <div class="small-container">
-  <span>x</span>
-  <p>H</p>
-  </div>
-</div>
